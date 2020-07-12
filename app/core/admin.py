@@ -24,4 +24,3 @@ class UserAdmin(BaseUserAdmin):
             'fields': ('email', 'password1', 'password2')
         }),
     )
-    # exclude = ['username']
