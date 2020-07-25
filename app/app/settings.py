@@ -25,7 +25,7 @@ SECRET_KEY = 'ud27f1uqvezf=k++0*0hqlsb0@whteasjop!van_^))t15b0uo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
 
 
 # Application definition
@@ -40,11 +40,13 @@ DEFAULT_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 LOCAL_APPS = [
-    'core'
+    'core',
+    'user'
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
